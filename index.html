@@ -220,6 +220,12 @@ Initialize Bootstrap functionality -->
         });
     });
 
+    $(document).ready(function () {
+        $('#mac').val(s);
+
+        $('#serial').val(s2);
+    });
+
     var clipboard = new ClipboardJS('.btn');
     clipboard.on('success', function (e) {
         alert("Script copiado");
@@ -229,13 +235,7 @@ Initialize Bootstrap functionality -->
         alert("Não copiado");
     });
 
-   /* $(document).ready(function () {
-        $('#mac').val(s);
-
-        $('#serial').val(s2);
-
-
-    });*/
+  
 </script>
 
 </html>
